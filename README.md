@@ -13,15 +13,10 @@ serves it as-is — no framework preset, no `vercel.json` needed.
 | `favicon.svg` | The mark, on a rounded dark tile. |
 | `og.png` | 1200×630 link preview for social and iMessage. |
 
-## Before going live
+## Domain
 
-Two lines in `index.html` still point at a placeholder domain — search for
-`fanfare.example` and set both to the real one:
-
-```html
-<meta property="og:url" content="https://fanfare.example">
-<link rel="canonical" href="https://fanfare.example">
-```
+Live at `https://www.thefanfare.ca`. The apex (`thefanfare.ca`) 308-redirects to
+`www`, which is why `www` is the canonical host in `index.html`.
 
 ## Local preview
 

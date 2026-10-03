@@ -7,9 +7,8 @@
 <meta name="description" content="Fanfare. Every Business Deserves a Fanfare. Coming soon.">
 <meta name="theme-color" content="#0A0C11">
 
-<!-- Update these two to the real domain once DNS is pointed. -->
-<meta property="og:url" content="https://fanfare.example">
-<link rel="canonical" href="https://fanfare.example">
+<meta property="og:url" content="https://www.thefanfare.ca">
+<link rel="canonical" href="https://www.thefanfare.ca">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Fanfare">
 <meta property="og:description" content="Every Business Deserves a Fanfare. Coming soon.">
@@ -21,6 +20,17 @@
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/og.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fanfare",
+  "legalName": "1001751772 ONTARIO INC.",
+  "url": "https://www.thefanfare.ca",
+  "logo": "https://www.thefanfare.ca/favicon.svg"
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,6 +59,7 @@
     color: var(--paper);
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     display: grid;
+    grid-template-rows: 1fr auto;
     place-items: center;
     min-height: 100svh;
     padding: 48px 16px;
@@ -94,6 +105,18 @@
     width: 100%;
     max-width: 34rem;
   }
+
+  footer {
+    position: relative;
+    z-index: 1;
+    margin-top: 48px;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: var(--muted);
+  }
+
+  footer p { margin: 0; }
 
   .mark {
     width: clamp(78px, 17vw, 112px);
@@ -169,6 +192,7 @@
   .tagline.reveal{ animation-delay: 0.60s; }
   .rule.reveal   { animation-delay: 0.72s; }
   .soon.reveal   { animation-delay: 0.80s; }
+  footer.reveal  { animation-delay: 0.90s; }
 
   @keyframes rise { to { opacity: 1; transform: none; } }
 
@@ -201,5 +225,10 @@
     <div class="rule reveal"></div>
     <p class="soon reveal">Coming soon</p>
   </main>
+
+  <footer class="reveal">
+    <p>&copy; 2026 1001751772 ONTARIO INC. All rights reserved.</p>
+    <p>Fanfare is operated by 1001751772 ONTARIO INC., Ontario, Canada.</p>
+  </footer>
 </body>
 </html>
