@@ -11,6 +11,7 @@ serves it as-is — no framework preset, no `vercel.json` needed.
 | --- | --- |
 | `index.html` | The page. Styles are inline so it renders in one request. |
 | `terms.html` | Terms of Service, linked from the homepage footer. Names the operating company, 1001751772 ONTARIO INC. |
+| `privacy.html` | Privacy Policy, linked from the homepage footer next to the terms. |
 | `favicon.svg` | The mark, on a rounded dark tile. |
 | `og.png` | 1200×630 link preview for social and iMessage. |
 
